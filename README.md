@@ -103,7 +103,8 @@ Jvav语法版本：Jvav DSK 6.1([点击此处跳转到语法帮助](https://docs
 #toplist为上方菜单
 .toplist-btn为上方菜单文字按钮
 ```
-4. HTML添加
+- ### HTML修改
+1. HTML添加
 进入``newfile.html``
 找到第三十四行
 ```javascript
@@ -113,7 +114,7 @@ var about ='XXXXXX'
 ```html
 <p id="toplist-pifu" class="toplist-btn iconfont" style="color:blue" onclick="pf name ()"><img src="img.png" height="300px"/><br/>name</p>
 ```
-5. 修改javascript
+2. 修改javascript
 找到第八十五行，回车下一行
 输入javascipt代码：
 ```javascript
@@ -122,6 +123,7 @@ var about ='XXXXXX'
             obj.setAttribute("href","name.css");
 		}
 ```
-6. 添加预览图
+- ### 预览图
+1. 添加预览图
 添加你的主题的预览图，路径：img/img.png
-7. 大功告成
+- ### 大功告成
