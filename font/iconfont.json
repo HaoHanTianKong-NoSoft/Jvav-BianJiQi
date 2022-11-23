@@ -1,0 +1,65 @@
+{
+  "id": "3723099",
+  "name": "Jvav Editer",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "11383637",
+      "name": "运行",
+      "font_class": "yunhang",
+      "unicode": "e6c1",
+      "unicode_decimal": 59073
+    },
+    {
+      "icon_id": "12323766",
+      "name": "重命名",
+      "font_class": "zhongmingming",
+      "unicode": "e657",
+      "unicode_decimal": 58967
+    },
+    {
+      "icon_id": "25964415",
+      "name": "导出",
+      "font_class": "daochu",
+      "unicode": "e65e",
+      "unicode_decimal": 58974
+    },
+    {
+      "icon_id": "4686546",
+      "name": "保存",
+      "font_class": "baocun",
+      "unicode": "ec09",
+      "unicode_decimal": 60425
+    },
+    {
+      "icon_id": "6429564",
+      "name": "主页",
+      "font_class": "zhuye",
+      "unicode": "e61d",
+      "unicode_decimal": 58909
+    },
+    {
+      "icon_id": "2545089",
+      "name": "新建文件",
+      "font_class": "xinjianwenjian",
+      "unicode": "e699",
+      "unicode_decimal": 59033
+    },
+    {
+      "icon_id": "7594808",
+      "name": "24gl-fileEmpty",
+      "font_class": "24gl-fileEmpty",
+      "unicode": "eabf",
+      "unicode_decimal": 60095
+    },
+    {
+      "icon_id": "9790016",
+      "name": "folder-open",
+      "font_class": "folder-open",
+      "unicode": "e754",
+      "unicode_decimal": 59220
+    }
+  ]
+}

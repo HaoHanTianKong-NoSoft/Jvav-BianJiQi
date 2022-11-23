@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<link rel="icon" href="icon.png"/>
+		<link type="text/css" rel="stylesheet" href="https://api.urasoft.top/api/uramain/uramain.min.css"/>
+		<link type="text/css" rel="stylesheet" href="css/index.css"/>
+		<script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+		<script src="https://cdn.bootcdn.net/ajax/libs/layer/3.5.1/layer.js"></script>
+		<title>UraSoft Jvav Editer</title>
+	</head>
+	<body>
+		<img src="img/about.png" id="aboutbtn" width="40px" height="40px" draggable="false" title="关于" onclick="aboutus()"/>
+		<div id="main">
+			<img src="icon.png" draggable="false"/>
+			<h1>UraSoft Jvav Editer</h1>
+			<h4>UraSoft Jvav Editer代码编辑器</h4>
+			<div id="begining">
+				<div style="text-align: left;margin-top: 30px;">
+					<a class="choose iconfont" id="newfile">新建文件</a><br/>
+					<a class="choose iconfont" id="openfilebtn">打开文件</a><br/>
+					<a class="choose iconfont" id="nosoft">切换版本</a>
+				</div>
+				<div style="position: relative;bottom: 66px;left: 40px;z-index: -1;">
+					<b>"我们比Java更牛逼!"</b><br/>
+					<b>"Java只是盗版货"</b><br/>
+					<b>"现已推出jaba语言"</b>
+				</div>
+			</div>
+		</div>
+	</body>
+			<style>
+			@font-face {
+			  font-family: 'iconfont';
+			  src: url('font/iconfont.woff2?t=1666428224222') format('woff2'),
+			       url('font/iconfont.woff?t=1666428224222') format('woff'),
+			       url('font/iconfont.ttf?t=1666428224222') format('truetype');
+			}
+			.iconfont {
+			  font-family: "iconfont" !important;
+			  font-size: 16px;
+			  font-style: normal;
+			  -webkit-font-smoothing: antialiased;
+			  -moz-osx-font-smoothing: grayscale;
+			}
+			:root{
+				background-color:#2b2b2b ;
+				color: #f1f1f1;
+			}
+			.center{
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				height: 100%;
+				width: 100%;
+			}
+			#main{
+				position: absolute;
+				text-align: center;
+				left: 50%;
+				top: 50%;
+				transform: translate(-50%, -50%);
+			}
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			.choose{
+				display: inline-block;
+				color: #2980b9;
+				text-decoration: none;
+				transition: all .2s;
+				margin-top: 2px;
+				cursor: pointer;
+				font-size: 16px;
+				z-index: 2;
+			}
+			.choose:active{
+				opacity: .7;
+			}
+			#aboutbtn{
+				position: absolute;
+				top: 2px;
+				right: 2px;
+				transition: all .3s;
+				cursor: pointer;
+			}
+			#aboutbtn:hover{
+				filter: brightness(1.1);
+				filter: drop-shadow(0 0 6px #000); 
+			}
+			#aboutbtn:active{
+				filter: brightness(.9);
+				opacity: .8;
+				transform: scale(.9);
+				filter: drop-shadow(0 0 6px #000); 
+			}
+		</style>
+	<script>
+		function aboutus(){
+			var about = '"<img src=\'icon.png\' width=100px height=100px draggable=\'false\'/><br/><b style=color:#000>UraSoft Jvav Editer NoSoft(Beta 1.2)<br/>适用于网页的Jvav代码编辑器<br/>我们采取最新Jvav语法<a href="https://vdse.bdstatic.com/192d9a98d782d9c74c96f09db9378d93.mp4" class=\'url\' style=\'cursor:pointer\'>查看文档</a><br/>Made By:NoSoft Studio 2022<br/>©UraSoft Studio</b>"'
+			layer.open({title:["<b>关于</b>","text-align:left"],content:about})
+		}
+		$('#newfile').click(function(){
+			layer.load(1,{shade:[.8,'rgba(0,0,0,.9)']});
+			setTimeout("location.href='newfile.html'",600);
+		})
+		$('#openfilebtn').click(function(){
+			layer.load(1,{shade:[.8,'rgba(0,0,0,.9)']});
+			setTimeout("location.href='openfile.html'",500);
+		})
+		$('#nosoft').click(function(){
+			layer.load(1,{shade:[.8,'rgba(0,0,0,.9)']});
+			setTimeout("location.href='jn/index.html'",500);
+		})
+	</script>
+</html>

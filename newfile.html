@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>新建Jvav工程</title>
+		<link rel="icon" href="icon.png"/>
+		<link type="text/css" rel="stylesheet" href="https://api.urasoft.top/api/uramain/uramain.min.css"/>
+		<script src="./js/highlightjs-line-numbers.min.js"></script>
+		<link type="text/css" id="css"  rel="stylesheet" href="1.css"/>
+		<script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+		<script src="https://cdn.bootcdn.net/ajax/libs/layer/3.5.1/layer.js"></script>
+        <script src="./js/jquery-1.12.0.min.js"></script>
+        <script src="./js/auto-line-number.js"></script>
+		<script src="js/noright.js"></script>
+		<script src="js/jvav.js"></script>
+	</head>
+	<body>
+		<div id="toplist">
+			<div style="position: absolute;left: 30px;">
+				<p id="toplist-save" class="toplist-btn iconfont" onclick="save()">保存 Ctrl+S</p>
+				<p id="toplist-run" class="toplist-btn iconfont" onclick="run()">调试&运行 Ctrl+R</p>
+				<p id="toplist-filename" class="toplist-btn iconfont" onclick="renamefile()">重命名项目 F2</p>
+				<p id="toplist-back" class="toplist-btn iconfont" onclick="back()">返回主页</p>
+				<p id="toplist-export" class="toplist-btn iconfont" onclick="download()">导出.jvr文件 Ctrl+D</p>
+				<p id="toplist-pifu" class="toplist-btn iconfont" onclick="pifu()">皮肤切换 Ctrl+P</p>
+			</div>
+		</div>
+		<div class="center">
+			<textarea id="codetext" autofocus></textarea>
+		</div>
+	</body>
+	<script>
+			function pifu(){
+			var about = '<p id="toplist-pifu" class="toplist-btn iconfont" style="color:blue" onclick="pf1()"><img src="img/1.png" height="300px"/><br/>官方默认</p><p id="toplist-pifu" class="toplist-btn iconfont" style="color:blue" onclick="pf2()"><img src="img/2.png" height="300px"/><br/>极度简洁</p><p id="toplist-pifu" class="toplist-btn iconfont" style="color:blue" onclick="pf3()"><img src="img/3.png" height="300px"/><br/>层次黑色</p><p id="toplist-pifu" class="toplist-btn iconfont" style="color:blue" onclick="pf4()"><img src="img/4.png" height="300px"/><br/>透亮雪白</p><p id="toplist-pifu" class="toplist-btn iconfont" style="color:blue" onclick="pf5()"><img src="img/5.png" height="300px"/><br/>锘软风格（测试）</p>'
+			layer.open({title:["<b>皮肤切换</b>","text-align:left"],content:about})
+		}
+        var code;
+		document.getElementById('toplist-save').onclick = function(){
+			code = document.getElementById('codetext').value;
+			if(code === ''){
+				layer.msg('<b style="color:#000;display:inline-block;text-shadow:none;padding:0;margin:0">请输入内容!</b>',{time:600,icon:2,shift : 6,scrollbar:false,offset:'30px'});
+			}else{
+				layer.msg('<b style="color:#000;display:inline-block;text-shadow:none;padding:0;margin:0">保存完成</b>',{time:600,icon:1,shift : 5,scrollbar:false,offset:'30px'});
+			}
+		}
+		function renamefile(){
+			var newname = prompt('请输入新的项目名');
+			document.getElementsByTagName('title')[0].innerText = newname;
+		}
+		function back(){
+			layer.load(1,{shade:[.8,'rgba(0,0,0,.9)']});
+			setTimeout("location.href='index.html'",400);
+		}
+		function download(){
+			var name = document.getElementsByTagName('title')[0].innerText;
+			var text = document.getElementById('codetext').value;
+			var blob = new Blob ([text],{type:'nosoftjvr/nosoftjvr'});
+			var oA = document.createElement('a');
+			var url = window.URL.createObjectURL(blob);
+			oA.download =  name + '.jvr';
+			oA.href = url;
+			document.body.appendChild(oA);
+			oA.click();
+			document.body.removeChild(oA);
+		}
+			function pf1(){
+            var obj = document.getElementById("css");
+            obj.setAttribute("href","1.css");
+		}
+			function pf2(){
+            var obj = document.getElementById("css");
+            obj.setAttribute("href","2.css");
+		}
+			function pf3(){
+            var obj = document.getElementById("css");
+            obj.setAttribute("href","3.css");
+		}
+			function pf4(){
+            var obj = document.getElementById("css");
+            obj.setAttribute("href","4.css");
+		}
+    function pf5(){
+            var obj = document.getElementById("css");
+            obj.setAttribute("href","5.css");
+		}
+		//保存
+		$(document).keyup(function(e){  
+           if (83 == e.keyCode && e.ctrlKey){
+           document.getElementById('toplist-save').click(); 
+        }
+        }); 
+        window.addEventListener("keydown", function(e) {
+        //可以判断是不是mac，如果是mac,ctrl变为花键
+        //event.preventDefault() 方法阻止元素发生默认的行为。
+        if (e.keyCode == 83 && (navigator.platform.match("Mac") ? e.metaKey : e.ctrlKey)) {
+            e.preventDefault();
+        }
+        }, false);
+        
+        
+        //运行
+		$(document).keyup(function(e){  
+           if (82 == e.keyCode && e.ctrlKey){
+           document.getElementById('toplist-run').click(); 
+        }
+        }); 
+        window.addEventListener("keydown", function(e) {
+        //可以判断是不是mac，如果是mac,ctrl变为花键
+        //event.preventDefault() 方法阻止元素发生默认的行为。
+        if (e.keyCode == 82 && (navigator.platform.match("Mac") ? e.metaKey : e.ctrlKey)) {
+            e.preventDefault();
+        }
+        }, false);
+        
+        //重命名
+		$(document).keyup(function(e){  
+           if (113 == e.keyCode){
+           document.getElementById('toplist-filename').click(); 
+        }
+        }); 
+        window.addEventListener("keydown", function(e) {
+        //可以判断是不是mac，如果是mac,ctrl变为花键
+        //event.preventDefault() 方法阻止元素发生默认的行为。
+        if (e.keyCode == 113) {
+            e.preventDefault();
+        }
+        }, false);
+        
+        //主题
+		$(document).keyup(function(e){  
+           if (80 == e.keyCode && e.ctrlKey){
+           document.getElementById('toplist-pifu').click(); 
+        }
+        }); 
+        window.addEventListener("keydown", function(e) {
+        //可以判断是不是mac，如果是mac,ctrl变为花键
+        //event.preventDefault() 方法阻止元素发生默认的行为。
+        if (e.keyCode == 80 && (navigator.platform.match("Mac") ? e.metaKey : e.ctrlKey)) {
+            e.preventDefault();
+        }
+        }, false);
+        
+        //下载
+		$(document).keyup(function(e){  
+           if (68 == e.keyCode && e.ctrlKey){
+           document.getElementById('toplist-export').click(); 
+        }
+        }); 
+        window.addEventListener("keydown", function(e) {
+        //可以判断是不是mac，如果是mac,ctrl变为花键
+        //event.preventDefault() 方法阻止元素发生默认的行为。
+        if (e.keyCode == 68 && (navigator.platform.match("Mac") ? e.metaKey : e.ctrlKey)) {
+            e.preventDefault();
+        }
+        }, false);
+	</script>
+</html>

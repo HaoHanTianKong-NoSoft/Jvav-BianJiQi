@@ -1,0 +1,43 @@
+			.iconfont {
+			  font-family: "iconfont" !important;
+			  font-size: 18px;
+			  font-style: normal;
+			  -webkit-font-smoothing: antialiased;
+			  -moz-osx-font-smoothing: grayscale;
+			}
+			
+			.toplist-btn{
+				cursor: pointer;
+				border-radius: 5px;
+				padding: 5px;
+				transition: all .3s;
+			}
+			.toplist-btn:hover{
+				background-color: rgba(113, 113, 113, .6);
+			}
+			.toplist-btn:active{
+				background-color: rgba(113, 113, 113, .4);
+			}
+			
+				#codetext{
+				display: inline-block;
+				width: 50%;
+				height: 80%;
+				resize: none;
+				border: none;
+				outline: none;
+				font-size: 20px;
+				transition: all .3s;
+				padding: 10px;
+				border-radius: 10px;
+				font-family: 'microsoft yahei';
+				font-weight: bold;
+			}
+			
+				.center{
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				height: 100%;
+				width: 100%;
+			}
