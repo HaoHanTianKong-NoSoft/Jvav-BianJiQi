@@ -2,9 +2,9 @@
 ## 语言 Language
 - [中文](README.md)
 ## 关于
-Jvav-编辑器 是适用于[Jvav语言](https://jvav.space/)的编辑器，并且已获得[UraSoft](urasoft.top)站长的授权，由[NoSoft](nosoft.urasoft.top)开发。
-## 与[UraSoft](urasoft.top)（或[Jvav语言](https://jvav.space/)）的关系
-[NoSoft](nosoft.urasoft.top)是[UraSoft](urasoft.top)下属网站。
+Jvav-编辑器 是适用于[Jvav语言](https://jvav.space/)的编辑器，并且已获得[UraSoft](https:urasoft.top)站长的授权，由[NoSoft](https:nosoft.urasoft.top)开发。
+## 与[UraSoft](https:urasoft.top)（或[Jvav语言](https://jvav.space/)）的关系
+[NoSoft](https:nosoft.urasoft.top)是[UraSoft](https:urasoft.top)下属网站。
 Jvav-编辑器已与[Jvav语言](https://jvav.space/)达成合作，合作内容：NoSoft帮忙开发语法提示。
 ## 版本
 编辑器版本：1.0.0（多彩界面）
@@ -12,7 +12,7 @@ Jvav语法版本：Jvav DSK 6.1([点击此处跳转到语法帮助](https://docs
 ## 更新说明
 1.0.0 初始版本
 ## 不用安装的Jvav-编辑器网页端
-[点击此处跳转](nosoft.urasoft.top/jvav)或者复制并跳转下列网址
+[点击此处跳转](https:nosoft.urasoft.top/jvav)或者复制并跳转下列网址
 `nosoft.urasoft.top/jvav`
 ## 安装须知
 无，直接下载，使用即可
