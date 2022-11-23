@@ -123,6 +123,5 @@ var about ='XXXXXX'
 		}
 ```
 6. 添加预览图
-
-添加你的主题的预览图，路径：`img/img.png`
+添加你的主题的预览图，路径：img/img.png
 7. 大功告成
