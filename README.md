@@ -1,7 +1,7 @@
 # Jvav-编辑器介绍
 ## 语言 Language
 - [中文](README.md)
-## 关于
+## 关于本开源项目
 Jvav-编辑器 是适用于[Jvav语言](https://jvav.space/)的编辑器，并且已获得[UraSoft](https:urasoft.top)站长的授权，由[NoSoft](https:nosoft.urasoft.top)开发。
 ## 与[UraSoft](https:urasoft.top)（或[Jvav语言](https://jvav.space/)）的关系
 [NoSoft](https:nosoft.urasoft.top)是[UraSoft](https:urasoft.top)下属网站。
