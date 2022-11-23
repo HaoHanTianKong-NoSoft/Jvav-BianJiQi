@@ -99,8 +99,8 @@ Jvav语法版本：Jvav DSK 6.1([点击此处跳转到语法帮助](https://docs
 .center为代码键入Div 不建议修改
 .middle未知 不建议修改
 :root为界面 可以修改背景颜色、字体颜色
-&#35;codetext为文本框 可修改
-&#35;toplist为上方菜单
+#codetext为文本框 可修改
+#toplist为上方菜单
 .toplist-btn为上方菜单文字按钮
 ```
 4. HTML添加
